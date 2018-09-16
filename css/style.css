@@ -151,6 +151,30 @@
 			vertical-align: middle;
 			width: 1px;
 		}
+/* Div */
+#leftDiv{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 600;
+  float:left;
+  text-align:left;
+  width:10em;
+  margin-left: 2em;
+}
+#rightDiv
+{
+font-size: 1.5em;
+line-height: 1.5em;
+font-weight: 300;
+float:right;
+text-align:left;
+width:30em;
+margin-right: 2em;
+font-family: TimesNR;
+}
+	#rightDiv b {
+font-weight: 500;	
+	}
 
 /* Header */
 	@-moz-keyframes header { 0% { -moz-transform: translate3d(0,1em,0); -webkit-transform: translate3d(0,1em,0); -o-transform: translate3d(0,1em,0); -ms-transform: translate3d(0,1em,0); transform: translate3d(0,1em,0); opacity: 0; } 100% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; } }
@@ -165,11 +189,11 @@
 	@keyframes nav-icons { 0% { -moz-transform: translate3d(0,1em,0); -webkit-transform: translate3d(0,1em,0); -o-transform: translate3d(0,1em,0); -ms-transform: translate3d(0,1em,0); transform: translate3d(0,1em,0); opacity: 0; } 100% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; } }
 
 	#header {
-		-moz-animation: header 1s 1.27s forwards;
-		-webkit-animation: header 1s 1.27s forwards;
-		-o-animation: header 1s 1.27s forwards;
-		-ms-animation: header 1s 1.27s forwards;
-		animation: header 1s 1.27s forwards;
+		-moz-animation: header 1s 2.25s forwards;
+		-webkit-animation: header 1s 2.25s forwards;
+		-o-animation: header 1s 2.25s forwards;
+		-ms-animation: header 1s 2.25s forwards;
+		animation: header 1s 2.25s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-o-backface-visibility: hidden;
@@ -195,18 +219,32 @@
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+			/*font-family: TimesNR;*/
 		}
 
-		#header p {
-			font-size: 1.25em;
-			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+		#header h2 {
+			font-size: 2.5em;
+			font-weight:300;
+			line-height: 1em;
+			margin: 0.7em 0 0em 0;
+			opacity: 0.9;
+			/*font-family: TimesNR;*/
 		}
-
-		#header nav {
-			margin: 1.5em 0 0 0;
+		#header h3 {
+			font-size: 2em;
+			font-weight:300;
+			line-height: 1em;
+			margin: 0.3em 0 0em 0;
+			opacity: 0.9;
+			font-family: TimesNR;
 		}
-
+		#header h4 {
+			font-size: 1.8em;
+			font-weight:600;
+			line-height: 1em;
+			margin: 1em 0 0.7em 0;
+			/*font-family: TimesNR;*/
+		}
 			#header nav li {
 				-moz-animation: nav-icons 0.5s ease-in-out forwards;
 				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
@@ -377,3 +415,4 @@
 		text-align: center;
 		width: 100%;
 	}
+
