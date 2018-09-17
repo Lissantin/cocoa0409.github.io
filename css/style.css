@@ -59,12 +59,12 @@
 		-o-animation: wrapper 3s forwards;
 		-ms-animation: wrapper 3s forwards;
 		animation: wrapper 3s forwards;
-		height: 100%;
 		left: 0;
 		opacity: 0;
 		position: fixed;
 		top: 0;
 		width: 100%;
+		height: 100%;
 	}
 
 /* BG */
@@ -127,9 +127,34 @@
 		height: 100%;
 		left: 0;
 		opacity: 0;
-		position: fixed;
-		top: 0;
+		position: relative;
+		top: 0em;
 		width: 100%;
+	}
+/* overlay2 */
+	@-moz-keyframes overlay2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-webkit-keyframes overlay2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-o-keyframes overlay2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-ms-keyframes overlay2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@keyframes overlay2 { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+	#overlay2 {
+		-moz-animation: overlay2 1.5s 1.5s forwards;
+		-webkit-animation: overlay2 1.5s 1.5s forwards;
+		-o-animation: overlay2 1.5s 1.5s forwards;
+		-ms-animation: overlay2 1.5s 1.5s forwards;
+		animation: overlay2 1.5s 1.5s forwards;
+		background-attachment: fixed, fixed;
+		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: relative;
+		top: 0em;
+		width: 28%;
 	}
 
 /* Main */
